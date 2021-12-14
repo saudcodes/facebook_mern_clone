@@ -1,0 +1,172 @@
+/* Set this to have width and height automatically calculate and factor in padding and border into size*/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /* By default, body contains some margin
+..get rid of this to allow elements to 
+span the page in its entirety */
+  margin: 0;
+  font-family: 'Kaisei HarunoUmi', serif;
+  height: 100%; /*Allows the page to span entire vertical space*/
+}
+
+.main-header {
+  width: 100%;
+  padding: 15px;
+  border-bottom: 5px solid black;
+  position: fixed;
+  /* A hack to get navbar to be at top above the item below*/
+  /*93px is the exact height of the navbar*/
+  margin-top: -93px;
+  z-index: 1;
+  background: white;
+}
+
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  vertical-align: middle;
+  margin: 0 2px;
+}
+
+.main-header div > a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 40px;
+  vertical-align: middle;
+}
+
+.main-header div > a:hover {
+  text-decoration: underline red solid 5px;
+}
+
+.main-nav {
+  display: inline-block; /* makes elements be on the same line with home button */
+  text-align: right; /* only sets the text towards the right */
+  width: calc(
+      100% - 200px
+  ); /*Subtract pixels from total width; allows the two elements to sit side by side*/
+  vertical-align: middle; /* sets row to be in line with home button */
+}
+
+.main-nav__items {
+  margin: 0; /*Allows nav to position it better*/
+  padding: 0; /*makes ul big as its contents only*/
+  list-style: none;
+}
+
+.main-nav__item {
+  display: inline-block; /*makes items sit side by side and not take up entire width*/
+  margin: 0 16px; /*puts space between items left and right*/
+  font-size: 20px;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+  padding: 3px 0;
+  transition: all 0.3s ease; /**changes color slowly and smoothly upon hover**/
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: black;
+  text-decoration: underline red solid 5px;
+  transition: all 0.3s ease; /**changes color slowly and smoothly upon hover**/
+}
+
+main {
+  /* A hack to get navbar to be at top above the item below*/
+  /*93px is the exact height of the navbar*/
+  margin-top: 93px;
+}
+
+.banner {
+  /* Photo by <a href="https://unsplash.com/@elifrancis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eli Francis</a> on <a href="https://unsplash.com/s/photos/study?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+  background: url('eli-francis-_M-DrbiNFa4-unsplash.jpg');
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  vertical-align: bottom;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.banner > h1 {
+  color: white;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: auto; /*Auto sizes margins to center elements*/
+  gap: 8px;
+}
+
+.features__header {
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: underline red solid 5px;
+  text-align: center;
+  margin: 18px;
+}
+
+.feature {
+  flex: 1 1;
+  flex-basis: clamp(250px, 100%, 350px);
+  display: block;
+  background-color: lightcoral;
+  text-align: center;
+  padding: 16px; /* Makes background bigger*/
+}
+
+.footer {
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  padding: 32px;
+  margin-top: 148px;
+}
+
+.footer > nav > ul {
+  text-align: center; /* Sets text to the center of the footer*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer > nav > ul li {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.footer > nav > ul > li a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.3s ease; /**changes color slowly and smoothly upon hover**/
+}
+
+.footer > nav > ul > li a:hover,
+.footer > nav > ul > li a:active {
+  background-color: lightcoral;
+  transition: all 0.3s ease; /**changes color slowly and smoothly upon hover**/
+}
+
+@media (max-width: 900px) {
+}

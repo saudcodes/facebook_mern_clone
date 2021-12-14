@@ -1,23 +1,46 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './layout/Navbar';
+import Footer from './layout/Footer';
+import Home from './home/Home';
+
+
 
 function App() {
+
+  const features = [
+    {
+      feature_title: 'True/ False',
+      feature_desc: `Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua. Purus in massa tempor nec
+      feugiat nisl pretium fusce. Nec feugiat nisl pretium
+      fusce id velit.`
+    },
+    {
+      feature_title: 'Multiple choice',
+      feature_desc: `Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua. Purus in massa tempor nec
+      feugiat nisl pretium fusce. Nec feugiat nisl pretium
+      fusce id velit.`
+    },
+    {
+      feature_title: 'Flashcards',
+      feature_desc: `Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua. Purus in massa tempor nec
+      feugiat nisl pretium fusce. Nec feugiat nisl pretium
+      fusce id velit.`
+    },
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main>
+        <Navbar />
+        <Home features = {features}/>
+      </main>
+      <Footer />
     </div>
   );
 }
