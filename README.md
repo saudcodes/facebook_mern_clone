@@ -1,4 +1,4 @@
-<h1 align="center">A Random JS Discord Bot</h1>
+<h1 align="center">Facebook MERN clone</h1>
 <h3 align="center">
     <a href="https://github.com/riboney/facebook_mern_clone/blob/main/docs/CONTRIBUTING.md">Join</a> · 
     <a href="https://github.com/riboney/facebook_mern_clone/wiki" class="default">Notes</a> 
