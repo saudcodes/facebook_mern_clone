@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-style {
+
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+
+#form-input {
+    border: none;
+    background-color: rgba(221, 221, 221, 0.747);
+}
+
+#navbar-links {
+    position: relative;
+    left: 20vw;
+}
+
+.nav-link {
+    border-radius: 10px;
+}
+
+a.nav-link:hover {
+    background-color: rgba(167, 167, 170, 0.555);
+}
+
+a.nav-link:active {
+
+    text-decoration: underline;
+    text-decoration-color: rgb(6, 129, 230);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#fb-icon {
+    color: rgb(0, 89, 255);
+}
+
+.left-sidebar {
+    flex-direction: column;
+    align-items: center;
+
+    /* Fixed Sidebar (stay in place on scroll) */
+
+}
+
+.imp-links,
+.shortcuts {
+    flex-direction: column;
+    text-align: left;
+    width: fit-content;
+
+}
+
+.imp-links a,
+.shortcuts a {
+
+    text-decoration: none;
+    color: inherit;
+    width: fit-content;
+    margin-bottom: 20px;
+
+}
+
+.links-container {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    margin-right: 1vmax;
+}
+
+/* trying to make left sidebar links Background grey on hover */
+
+.links {
+    padding-right: 20px;
+    border-radius: 5px;
+
+}
+
+a.links {
+    color: inherit;
+}
+
+.links:hover {
+    background-color: rgba(167, 167, 170, 0.555);
+
+}
+
+.imp-links>a>i {
+    margin-right: 8px;
+}
+
+
+.friends-icon {
+    color: rgb(30, 126, 216);
+}
+
+.pages-icon {
+    color: rgb(212, 141, 9);
+}
+
+.jobs-icon {
+    color: rgb(138, 77, 8);
+}
+
+.groups-icon {
+    color: rgb(0, 74, 143);
+}
+
+.marketplace-icon {
+    color: rgb(95, 180, 255);
+}
+
+.watch-icon {
+    color: rgb(140, 201, 255);
+}
+
+.memories-icon {
+    color: rgb(53, 161, 255);
+}
+
+.story {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+}
+
+.story:hover {
+    opacity: 0.8;
+    background-color: black;
+    color: inherit;
+}
+
+.emoji {
+    color: rgb(255, 235, 53);
+}
+
+.commentbg {
+    background-color: rgba(211, 211, 211, 0.938);
+}
+
+.write-comment {
+    background-color: rgba(0, 0, 0, 0.938);
+}
+
+.post-comment .accordion-button:after {
+    margin-left: 0 !important;
+    display: none !important;
+}
+
+.post-comment .accordion-button:hover {
+    background: transparent !important;
+    border-color: transparent !important;
+
+}
+
+.post-comment .accordion-button:not(.collapsed) {
+    background: transparent !important;
+    box-shadow: none !important;
+
+}
+
+.lbar {
+    max-width: 310px;
+    width: 100%;
+    z-index: 4;
+    padding-top: none;
+    left: initial !important;
+
+    display: inline-block;
+    flex-direction: row;
+}
+
+.dropdown-item:active {
+    background-color: #d5d5d5 !important;
+}
